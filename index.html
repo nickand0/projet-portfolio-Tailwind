@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/49984c3204.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="issets/style.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                raleway:['Raleway', 'sans-serif'],
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-raleway">
+    <!--en tête barre de navigation-->
+        <header class="mx-auto px-3 md:px-20 py-3 flex justify-between bg-gray-100 fixed w-full z-20 opacity-80 hover:opacity-100">
+            <div>
+                <a class="px-4 py-2 bg-slate-300 rounded-md shadow-lg  mx-2 font-bold border " href="">AND<span class="text-blue-400">DEV</span></a>
+            </div>
+            <div class="flex gap-7 md:gap-20  px-2 ">
+                <a href="#home" class="hover:text-blue-400">Home</a>
+                <a href="#about" class="hover:text-blue-400">About</a>
+                <a href="#project" class="hover:text-blue-400">Project</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+            </div>
+       </header>
+    <main>
+         <!--section hero-->
+        <section id="home" class=" relative w-full  shadow-2xl " style="background-image: url('issets/images/IMG_1349.JPG');background-size: cover;background-position: center;height:495px;">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="container text-center relative mx-auto px-4 pt-40 flex flex-col justify-center text-white z-10">
+                <h3 class=" text-md md:text-xl font-bold font-serif py-3">Hello,it's Me</h3>
+                <h1 class="text-blue-400 text-4xl md:text-6xl font-bold font-serif py-3">Nikki</h1>
+                <p class=" text-sm md:text-lg py-3 px-10">Welcome to my Portfolio! I am a software developer specializing in creating robust and scalable applications and websites,with a passion for solving complex problems through innovative solutions</p>
+            </div>
+        </section>
+         <!--section compétences-->
+        <section id="about" class="competences ">
+            <img class="w-60 absolute left-0 top-36" src="issets/images/IMG_1312.png" alt="avatar">
+            <h2 class="text-2xl text text-center my-10 font-bold font-serif">My <span class="text-blue-400">Skills</span></h2>
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-4 my-10 ">
+                <div class="flex flex-col justify-center items-center gap-4  mx-5 py-3 rounded-xl shadow-[18px_18px_36px_#a3a3a3,-18px_-18px_36px_#dddddd] hover:bg-blue-400  transition-transform hover:scale-110  duration-500 ">
+                    <i class="fa-brands fa-html5 fa-5x"></i>
+                    <p class="font-serif text-gray-500">HTML5</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4 mx-5 py-3 rounded-xl shadow-[18px_18px_36px_#a3a3a3,-18px_-18px_36px_#dddddd] hover:bg-blue-400 transition-transform hover:scale-110  duration-500">
+                    <i class="fa-brands fa-css3-alt fa-5x"></i>
+                   <p class="font-serif text-gray-500">CSS</p> 
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4 mx-5 py-3 rounded-xl shadow-[18px_18px_36px_#a3a3a3,-18px_-18px_36px_#dddddd] hover:bg-blue-400 transition-transform hover:scale-110  duration-500">
+                    <i class="fa-brands fa-bootstrap fa-5x"></i>
+                    <p class="font-serif text-gray-500">BOOTSTRAP</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4 mx-5  py-3 rounded-xl shadow-[18px_18px_36px_#a3a3a3,-18px_-18px_36px_#dddddd] hover:bg-blue-400 transition-transform hover:scale-110  duration-500">
+                    <img src="issets/images/png-transparent-tailwind-css-hd-logo.png" alt="logo tailwind" width="70">
+                    <p class="font-serif text-gray-500">TAILWIND</p>
+                </div>
+            </div>
+        </section>
+         <!--section projets-->
+        <section id="project" class="projet py-8  ">
+            <h2 class="text-2xl text-center mb-10 font-bold font-serif">My <span class="text-blue-400">Projects</span></h2>
+            <div class=" grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-3 ">
+                    <div class="projet1 container flex flex-col border border-gray-200 rounded-md shadow-xl transition-transform hover:scale-110  duration-500 hover:bg-gray-200">
+                        <div class="bg-black flex justify-center">
+                            <img src="issets/images/portfolio-photography-flyer-design-template-e6761fc7936bc4163868834ea40cfad0_screen.jpg" class="w-full" alt="portfolio-photographe" >
+                        </div>
+                        <div class="">
+                            <h3 class=" font-bold  text-center text-2xl text-blue-500 py-10 font-serif">Photographer's Portfolio</h3>
+                            <p class="text-justify px-4 mb-4">This project is an online portfolio for a photographer, using HTML, CSS, Bootstrap, and Tailwind CSS to create a responsive and elegant layout. The site includes several sections: a photo gallery, a photographer's biography, client testimonials, and a contact page.</p>
+                        </div>
+                    </div>
+                    <div class="projet2 container flex flex-col border border-gray-200 rounded-md shadow-xl transition-transform hover:scale-110  duration-500 hover:bg-gray-200">
+                        <div class="bg-black md:pb-10 md:pt-10 lg:pb-10 lg:pt-10">
+                            <img src="issets/images/153230_6371456_873312_3639b551_image.jpg" class="w-full" alt="portfolio-photographe">
+                        </div>
+                        <div>
+                            <h3 class=" font-bold text-center text-2xl text-blue-500 py-10 font-serif">Restaurant Website</h3>
+                            <p class="text-justify px-4 mb-4">This project is a website for a local restaurant, featuring an interactive menu, a photo gallery, information about the restaurant, and an online reservation form. The design is crafted to be both aesthetic and functional, ensuring easy navigation for users.</p>
+                        </div>
+                    </div>
+                    <div class="projet3 container flex flex-col border border-gray-200 rounded-md shadow-xl transition-transform hover:scale-110  duration-500 hover:bg-gray-200">
+                        <div class="bg-black md:pt-24 md:pb-28 lg:pt-24 lg:pb-32">
+                            <img src="issets/images/exemple-blog-professionnel-jardin-min.jpg" class="w-full" alt="portfolio-photographe">
+                        </div>
+                        <div>
+                            <h3 class=" font-bold text-center text-2xl text-blue-500 py-10 font-serif"> Personal Blog</h3>
+                            <p class="text-justify px-4 mb-4">This project is a personal blog that allows the user to publish articles, categorize them, and enable visitors to leave comments. The design is modern and responsive, compatible with all screen sizes.</p>
+                        </div>
+                    </div>  
+            </div>
+        </section>
+        <!--section formulaire contact-->
+        <section id="contact" >
+            <h2 class="text-center font-bold text-2xl my-5 font-serif">Contact <span class="text-blue-500 ">Me</span></h2>
+           <div class="contact mx-20 border rounded-2xl px-10 py-10 bg-gray-200 shadow-md"> 
+                <div class="py-2"> 
+                    <label for="name">Name :</label><br>
+                    <input class="border w-full text-center rounded-md hover:shadow-lg" type="text" placeholder="ex:john Doe">
+                </div>
+                <div class="py-2"> 
+                    <label for="email">Email :</label><br>
+                    <input class="border w-full text-center rounded-md hover:shadow-lg" type="email" placeholder="example@gmail.com">
+                </div>
+                <div class="py-2"> 
+                    <label for="message">Message :</label><br>
+                    <input class="border w-full text-center rounded-md hover:shadow-lg py-4" type="text" placeholder=" your message">
+                </div>
+                <div class="flex justify-center">
+                    <button class="text-white bg-blue-500 rounded px-5 py-2 mt-5 hover:bg-blue-800">Send 
+                        <i class="fa-solid fa-arrow-right fa-fade fa-lg" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-20 py-10 bg-gray-500 text-white md:flex justify-around items-center">
+       
+            <p class="text-center my-2">Copyright © 2024 by Andoniaina Nikki | All right Reserved.</p>
+            <div class="flex gap-3 justify-center">
+                <a href=""><i class="fa-brands fa-facebook fa-md "style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in fa-md" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter fa-md" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-md" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok fa-md" style="color: #ffffff;"></i></a>
+            </div>
+            
+            
+       
+    </footer>
+
+</body>
+</html>
